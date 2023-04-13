@@ -10,12 +10,7 @@
         <va-navbar-item>Dashboard</va-navbar-item>
         <va-navbar-item>Reports</va-navbar-item>
         <va-navbar-item>Users</va-navbar-item>
-        <va-navbar-item>
-          <va-icon :color="darkNavbarColors.textColor" name="mdi-magnify" />
-        </va-navbar-item>
-        <va-navbar-item>
-          <va-icon :color="darkNavbarColors.textColor" name="mdi-account-circle-outline" />
-        </va-navbar-item>
+        
       </template>
     </va-navbar>
   </div>
@@ -42,8 +37,7 @@ const darkNavbarColors = computed(() => {
 });
 </script>
 
-<style scoped>
-.logo {
+<style scoped>.logo {
   font-weight: 600;
   font-size: 1.5rem;
 }
