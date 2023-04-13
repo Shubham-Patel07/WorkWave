@@ -11,6 +11,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.7",
+    "@varlet/ui": "^2.9.5",
     "@vuestic/ag-grid-theme": "^1.0.3",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6",

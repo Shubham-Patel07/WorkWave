@@ -1,22 +1,24 @@
 <template>
-  <va-navbar v-bind="darkNavbarColors" class="mb-3">
-    <template #left>
-      <va-navbar-item class="logo">
-        LOGO
-      </va-navbar-item>
-    </template>
-    <template #right>
-      <va-navbar-item>Dashboard</va-navbar-item>
-      <va-navbar-item>Reports</va-navbar-item>
-      <va-navbar-item>Users</va-navbar-item>
-      <va-navbar-item>
-        <va-icon :color="darkNavbarColors.textColor" name="mdi-magnify" />
-      </va-navbar-item>
-      <va-navbar-item>
-        <va-icon :color="darkNavbarColors.textColor" name="mdi-account-circle-outline" />
-      </va-navbar-item>
-    </template>
-  </va-navbar>
+  <div>
+    <va-navbar v-bind="darkNavbarColors" class="mb-3" fixed="top" hide-on-scroll>
+      <template #left>
+        <va-navbar-item class="logo">
+          LOGO
+        </va-navbar-item>
+      </template>
+      <template #right>
+        <va-navbar-item>Dashboard</va-navbar-item>
+        <va-navbar-item>Reports</va-navbar-item>
+        <va-navbar-item>Users</va-navbar-item>
+        <va-navbar-item>
+          <va-icon :color="darkNavbarColors.textColor" name="mdi-magnify" />
+        </va-navbar-item>
+        <va-navbar-item>
+          <va-icon :color="darkNavbarColors.textColor" name="mdi-account-circle-outline" />
+        </va-navbar-item>
+      </template>
+    </va-navbar>
+  </div>
 </template>
 
 <script setup>
@@ -40,7 +42,7 @@ const darkNavbarColors = computed(() => {
 });
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .logo {
   font-weight: 600;
   font-size: 1.5rem;

@@ -4,11 +4,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    {
-      path: '/NavBar',
-      name: 'NavigationBar',
-      component: () => import('../components/Navbar/AppNavbar.vue')
-    },
+    // {
+    //   path: '/NavBar',
+    //   name: 'NavigationBar',
+    //   component: () => import('../components/Navbar/AppNavbar.vue')
+    // },
     // {
     //   path: '/about',
     //   name: 'about',

@@ -1,18 +1,13 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/NavBar">Nav</router-link>
-    </div>
+    <AppNavbar />
   </div>
 </template>
 
 <script>
+import AppNavbar from "../src/components/Navbar/AppNavbar.vue";
 export default {
-  setup () {
-    
-
-    return {}
-  }
+    components: { AppNavbar }
 }
 </script>
 
